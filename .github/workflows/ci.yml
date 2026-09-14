@@ -10,13 +10,14 @@ jobs:
     with:
         node_version: "22"
         run_tests: false
-  deploy:
-    needs: ci
-    runs-on: ubuntu-latest
-    steps:
-    - run: |
-       echo "Version: ${{needs.ci.outputs.application-version}}"
+  #deploy:
+  #  needs: ci
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #  - run: |
+  #     echo "Version: ${{needs.ci.outputs.application-version}}"
   deploy-dev:
+   needs: ci
    runs-on: ubuntu-latest
    environment: dev
 
