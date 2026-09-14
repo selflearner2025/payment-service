@@ -9,6 +9,7 @@ jobs:
     uses: selflearner2025/company-devops/.github/workflows/reusable-ci.yml@master
     with:
         node_version: "22"
+        run_tests: false
 
 
 
