@@ -1,4 +1,4 @@
-name: CI
+name: CI-Composite
 on:
  workflow_dispatch:
 
@@ -12,4 +12,3 @@ jobs:
           uses: selflearner2025/company-devops/actions/node-build@master
           with:
             node-version: "22"
-            
