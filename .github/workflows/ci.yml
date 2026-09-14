@@ -16,6 +16,13 @@ jobs:
     steps:
     - run: |
        echo "Version: ${{needs.ci.outputs.application-version}}"
+  deploy-dev:
+   runs-on: ubuntu-latest
+   environment: dev
+
+   steps:
+    - name: Deploy to DEV
+      run: echo "Deploying payment-service to DEV"
 
 
 
