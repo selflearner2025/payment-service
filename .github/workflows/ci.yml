@@ -10,6 +10,12 @@ jobs:
     with:
         node_version: "22"
         run_tests: false
+  deploy:
+    needs: ci
+    runs-on: ubutnu-latest
+    steps:
+    - run: |
+       echo "Version: ${{needs.ci.outputs.application-version}}"
 
 
 
