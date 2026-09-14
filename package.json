@@ -1,0 +1,8 @@
+{
+  "name": "payments-service",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test.js",
+    "build": "mkdir -p dist && cp index.js dist/"
+  }
+}
